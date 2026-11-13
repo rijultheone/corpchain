@@ -68,6 +68,20 @@ npm run compile
 npm test
 ```
 
+Run `npm install` again only if dependencies change or `node_modules` is removed. The Hardhat compiler targets the Cancun EVM because OpenZeppelin Contracts 5.x uses the `mcopy` instruction.
+
+To deploy the contracts to a local Hardhat node:
+
+```bash
+# Terminal 1
+npm run node
+
+# Terminal 2
+npm run deploy:local
+```
+
+The deployment command prints the local contract addresses and saves them to `docs/deployment.json` and `frontend/src/deployment.json`. The local node must remain running during deployment and resets when restarted.
+
 ## Scope and limitations
 
 - Sample shareholder data is hard-coded in `frontend/src/main.js`.
