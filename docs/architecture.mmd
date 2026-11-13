@@ -1,0 +1,11 @@
+flowchart TB
+  U[Issuer / Shareholders] --> UI[React + Vite DApp]
+  UI --> W[MetaMask Wallet]
+  W --> E[Ethers.js v6]
+  E --> S[ShareToken<br/>ERC20 + ERC20Votes]
+  E --> P[MockDividendToken<br/>ERC20 demo payment]
+  E --> D[DividendManager<br/>snapshot + entitlement + claim]
+  S -->|historical votes and supply| D
+  P -->|funded dividend pool| D
+  D --> L[(Ethereum Sepolia ledger)]
+  O[Issuer-entered simulated event data] --> UI
