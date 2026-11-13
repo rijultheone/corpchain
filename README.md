@@ -91,10 +91,9 @@ The deployment command prints the local contract addresses and saves them to `do
 
 ## Team
 
-- Tushar H (0166)
-- Punith Gowda M (0118)
-- Greeshma KR (0054)
-- Rijul (0128)
+- Tushar H 
+- Greeshma KR 
+- Rijul
 
 ## Before submission
 
